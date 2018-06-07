@@ -3,6 +3,9 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+const _14563065 = () => import('../pages/news/index.vue' /* webpackChunkName: "pages/news/index" */).then(m => m.default || m)
+const _7d131b11 = () => import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */).then(m => m.default || m)
+const _a7e1efe6 = () => import('../pages/news/_id.vue' /* webpackChunkName: "pages/news/_id" */).then(m => m.default || m)
 const _547471d3 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
 
@@ -63,6 +66,21 @@ export function createRouter () {
     linkExactActiveClass: 'nuxt-link-exact-active',
     scrollBehavior,
     routes: [
+		{
+			path: "/news",
+			component: _14563065,
+			name: "news"
+		},
+		{
+			path: "/about",
+			component: _7d131b11,
+			name: "about"
+		},
+		{
+			path: "/news/:id",
+			component: _a7e1efe6,
+			name: "news-id"
+		},
 		{
 			path: "/",
 			component: _547471d3,

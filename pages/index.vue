@@ -5,19 +5,14 @@
       <h1 class="title">
         Hello World
       </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+      <ul>
+        <li><nuxt-link :to="{ name:'index' }">首页</nuxt-link></li>
+        <li><nuxt-link :to="{ name:'about' }">关于</nuxt-link></li>
+        <li><nuxt-link :to="{ name:'news',params:{newsId:'3306'} }">新闻</nuxt-link></li>
+        <li><a href="/news/1">新闻1</a></li>
+        <li><a href="/news/2">新闻2</a></li>
+        <li><a href="/news/three">新闻3</a></li>
+      </ul>
     </div>
   </section>
 </template>

@@ -21,6 +21,16 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    loaders: [
+        {
+          test:/\.(png|jpe?g|gif|svg)$/,
+          loader:"url-loader",
+          query:{
+            limit:10000,
+            name:'img/[name].[hash].[ext]'
+          }
+        }
+    ],
     /*
     ** Run ESLint on save
     */
@@ -34,5 +44,6 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  css: ['~assets/css/normailze.css']
 }
