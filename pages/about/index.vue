@@ -9,7 +9,8 @@
 
 <script>
     export default {
-        name: "index"
+        name: "index",
+        transition: "test"
     }
 </script>
 

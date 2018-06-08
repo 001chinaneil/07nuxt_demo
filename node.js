@@ -54,3 +54,10 @@
 * 2.接收同上
 * 3.参数校验: 使用validate(params){ //内部校验逻辑 }
 * */
+
+//第六节 Nuxt的路由动画效果
+/*
+* 1.全局路由动画: 默认使用pages进行设置。
+*   eg: .page-enter-active, .page-leave-active{}
+*       .page-enter, .page-leave-active{}
+* */

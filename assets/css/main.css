@@ -1,0 +1,18 @@
+/*全局页面切换效果*/
+.page-enter-active, .page-leave-active {
+    transition: opacity 2s;
+}
+.page-enter, .page-leave-active {
+    opacity: 0;
+}
+
+/*部分页面单独切换效果*/
+.test-enter-active, .test-leave-active {
+    transition: all 2s;
+    font-size:12px;
+
+}
+.test-enter, .test-leave-active {
+    opacity: 0;
+    font-size:40px;
+}
