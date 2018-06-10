@@ -57,7 +57,45 @@
 
 //第六节 Nuxt的路由动画效果
 /*
-* 1.全局路由动画: 默认使用pages进行设置。
+* 1.全局路由动画: 默认使用pages进行设置。使用transition属性
 *   eg: .page-enter-active, .page-leave-active{}
 *       .page-enter, .page-leave-active{}
+* 2.页面单独设置路由动画: 类似全局路由设置，只不过，在页面底部的默认设置中，transition:'test'，
+*   eg: .test-enter-active,.test-leave-active{}
+*       .page-enter,.page-leave-active{}
+* 3.page 和 test居然是个参数。
+* 4.名为程朱，暗效申韩，杂以黄老。(一切以达到目的为目标)
+*
 * */
+
+//第七节 Nuxt的默认模板和默认布局
+/*
+* 1.处理每个页面都有的部分内容，可以采用公共组件 或者 默认模板解决，公共组件更灵活但是需要手动引入页面，
+*   默认模板更简单但是是每个页面都会有。
+* 2.在项目根目录新建app.html即可。
+* 3.{{HEAD}}就是读取的是nuxt.config.js里面的信息，{{APP}}就是pages文件夹下的主体页面了，
+*   其他部分就是每个页面都有的部分。HEAD APP必须大写，否则报错。
+* 4.总结: 单页面应用就是全站只有个基本页面(pages下的index.vue文件)，
+*   其他页面结构是以组件的形式拼合在一起的，它们之间用nuxt-link链接起来，可以传递参数
+*   联想: 现在就差怎么打包部署了。
+* 5.默认布局主要针对的是全站统一布局使用，它在layouts下的default.vue文件，
+*   其中<nuxt/>相当于每个页面的内容，模版只能定制<template>里的内容，跟布局有关系。
+* */
+
+//第八节 Nuxt的错误页面和个性meta设置
+/*
+* 1.404页面设置，直接在layouts文件夹下，新建error.vue文件。
+* 2.根据error.statusCode==404来做判断的
+* 3.谨记: 需要在底部的export default {
+*       props: ['error']
+*   }
+* 4.pages/news/index.vue 相当于 列表页；同目录的_id.vue相当于 详情页；
+* */
+
+
+
+
+
+
+
+
