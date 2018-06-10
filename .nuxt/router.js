@@ -5,6 +5,7 @@ Vue.use(Router)
 
 const _14563065 = () => import('../pages/news/index.vue' /* webpackChunkName: "pages/news/index" */).then(m => m.default || m)
 const _7d131b11 = () => import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */).then(m => m.default || m)
+const _292c5ac7 = () => import('../pages/asyncData.vue' /* webpackChunkName: "pages/asyncData" */).then(m => m.default || m)
 const _a7e1efe6 = () => import('../pages/news/_id.vue' /* webpackChunkName: "pages/news/_id" */).then(m => m.default || m)
 const _547471d3 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
@@ -75,6 +76,11 @@ export function createRouter () {
 			path: "/about",
 			component: _7d131b11,
 			name: "about"
+		},
+		{
+			path: "/asyncData",
+			component: _292c5ac7,
+			name: "asyncData"
 		},
 		{
 			path: "/news/:id",

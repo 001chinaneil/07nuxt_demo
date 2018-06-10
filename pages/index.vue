@@ -5,6 +5,9 @@
       <h1 class="title">
         Hello World
       </h1>
+      <div class="diss">
+        <img src="~static/images/manhua.png" alt="">
+      </div>
       <ul>
         <li><nuxt-link :to="{ name:'index' }">首页</nuxt-link></li>
         <li><nuxt-link :to="{ name:'about' }">关于</nuxt-link></li>
